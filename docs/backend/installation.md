@@ -1,3 +1,8 @@
+---
+title: Installation
+permalink: /docs/backend/installation
+---
+
 # Installation in production environment
 
 ## Docker
@@ -37,8 +42,3 @@ $ docker run -p 8100:8100 --name cardjizzer-backend \
 3. Build with `npm run build`
 4. Change the environment [variables](../.env). 
 5. Run with `node ./dist/server.js`
-
-### [_Back to table of contents_][index]
-
-
-[index]: ./index.md

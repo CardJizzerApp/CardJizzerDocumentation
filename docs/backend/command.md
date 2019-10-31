@@ -1,3 +1,8 @@
+---
+title: Command
+permalink: /docs/backend/command
+---
+
 # The Command class
 
 The command class located in `src/command.js` is the base class for every command.
@@ -21,9 +26,3 @@ NOTE: The term `ws` is associated with `websocket` and `cb` the short form of `c
 `getGame(gameId, cb(game)) => cb()`
 
 `isInGame(ws, cb(game, player, err)) => cb()`
-
-
-### [_Back to table of contents_][index]
-
-
-[index]: ./index.md

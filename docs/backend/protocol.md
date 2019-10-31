@@ -1,3 +1,8 @@
+---
+title: Protocol
+permalink: /docs/backend/protocol
+---
+
 # Protocol
 
 This section contains the most important protocol rules. For example the basic structure of a command and a response.
@@ -24,8 +29,5 @@ Responses are sent whenever a user (frontend) sends a command to the websocket o
 
 Every event has got its own errorCode (see [helper.js] for a list of currently implemented events).
 
-### [_Back to table of contents_][index]
 
-
-[index]: ./index.md
 [helper.js]: ../src/helper.js

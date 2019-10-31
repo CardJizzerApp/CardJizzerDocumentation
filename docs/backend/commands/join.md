@@ -1,3 +1,8 @@
+---
+title: Join
+permalink: /docs/backend/commands/join
+---
+
 # Join
 
 This command is an `auth-required` command used for joining an currently active game which is neither in state `INGAME` nor `STOPPED`.
@@ -19,8 +24,4 @@ Furthermore a new `round` object will be assigned to the game object.
 Where `gameid` is the id received from the [`fetchGames`][fetchgames] command.
 
 
-### [_Back to table of contents_][index]
-
-
-[index]: ./index.md
 [fetchgames]: ./fetchgames.md

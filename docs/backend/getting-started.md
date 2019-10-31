@@ -1,3 +1,8 @@
+---
+title: Getting Started
+permalink: /docs/backend/getting-started
+---
+
 # CardJizzerBackend Documentation
 
 The following documentation contained in the `docs/` folder will give some further insights into the app.
@@ -45,8 +50,4 @@ Where `command` represents the command to be executed (in the example case: [`jo
 and `params` the args required by the specific command.
 
 
-### [_Back to table of contents_][index]
-
-
-[index]: ./index.md
 [join-class]: ../src/commands/join.js

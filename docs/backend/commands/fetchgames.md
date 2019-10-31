@@ -1,3 +1,8 @@
+---
+title: Fetch Games
+permalink: /docs/backend/commands/fetchgames
+---
+
 # Fetch Games
 
 This command is a non-`auth-required` command used for getting a list of all active games.
@@ -13,8 +18,3 @@ NOTE: It does not require any arguments.
     "command": "fetchgames",
 }
 ```
-
-### [_Back to table of contents_][index]
-
-
-[index]: ./index.md
