@@ -2,3 +2,13 @@ remote_theme: vsoch/docsy-jekyll
 
 title: CardJizzer Documentation
 author: IJustDev
+
+logo_pixels: 34
+color: "#30638e"
+# color: "#8c1515" # primary color for header, buttons
+
+# Build settings
+markdown: kramdown
+accentColor: red # purple, green, etc.
+themeColor: red # purple, green, blue, orange, purple, grey
+fixedNav: 'true' # true or false
