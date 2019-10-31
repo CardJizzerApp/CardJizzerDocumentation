@@ -10,8 +10,6 @@
     - title: "Commands"
       url: "docs/backend/commands/command"
       children:
-        - title: "Commands"
-          url: "docs/backend/commands/command"
         - title: "FetchGames"
           url: "docs/backend/commands/fetchgames"
         - title: "Join"

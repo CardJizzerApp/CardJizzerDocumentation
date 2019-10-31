@@ -23,4 +23,4 @@ A event is basically a response (like you may know it from the [protocol][protoc
 A recommendation (and also implementation in the CardJizzerFrontend) is to use the `websocket.onmessage` function, so that whenever a event was sent by the backend the frontend instantly gets those important information.
 
 
-[protocol-docs]: ./protocol.md
+[protocol-docs]: ./protocol
