@@ -1,30 +1,23 @@
 - title: "Backend"
-  url: "docs/backend"
+  url: "docs/backend/getting-started"
   links:
     - title: "Getting Started"
       url: "docs/backend/getting-started"
-      children:
-        - title: Features
-          url: "docs/backend/getting-started#getting-started"
-        - title: Building
-          url: "docs/backend/getting-started#building"
-        - title: What kind of API
-          url: "docs/backend/getting-started#what-kind-of-api"
     - title: "Installation"
       url: "docs/backend/installation"          
     - title: "Protocol"
       url: "docs/backend/protocol"
     - title: "Commands"
-      url: "docs/backend/commands"
+      url: "docs/backend/commands/command"
       children:
         - title: "Commands"
-          url: "docs/backend/commands"
+          url: "docs/backend/commands/command"
         - title: "FetchGames"
           url: "docs/backend/commands/fetchgames"
         - title: "Join"
           url: "docs/backend/commands/join"
     - title: "Events"
-      url: "docs/backend/events"
+      url: "docs/backend/events/event"
   
 
 - title: "Frontend"

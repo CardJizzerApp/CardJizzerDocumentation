@@ -30,4 +30,4 @@ Responses are sent whenever a user (frontend) sends a command to the websocket o
 Every event has got its own errorCode (see [helper.js] for a list of currently implemented events).
 
 
-[helper.js]: ../src/helper.js
+[helper.js]: https://github.com/CardJizzerApp/CardJizzerBackend/blob/master/src/helper.js

@@ -1,6 +1,6 @@
 ---
 title: Command
-permalink: /docs/backend/command
+permalink: /docs/backend/commands/command
 ---
 
 # The Command class

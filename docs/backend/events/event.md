@@ -1,13 +1,13 @@
 ---
 title: Events
-permalink: /docs/backend/events
+permalink: /docs/backend/events/event
 ---
 
 # Events
 
 Events are the main reason this backend operates with websockets. We want to provide real time updates to the player. He sould instantly get notified when something in the game changes.
 
-A event is basically a response (like you may know it from the [protocol](protocol-docs) docs).
+A event is basically a response (like you may know it from the [protocol][protocol-docs] docs).
 
 ## Sample event
 ```json

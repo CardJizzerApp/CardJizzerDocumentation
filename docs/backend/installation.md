@@ -40,5 +40,5 @@ $ docker run -p 8100:8100 --name cardjizzer-backend \
 1. Clone the repository.
 2. Install packages with `npm i`
 3. Build with `npm run build`
-4. Change the environment [variables](../.env). 
+4. Change the environment [variables](https://github.com/CardJizzerApp/CardJizzerBackend/blob/master/.env). 
 5. Run with `node ./dist/server.js`
