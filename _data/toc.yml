@@ -18,7 +18,7 @@
       url: "docs/backend/commands"
       children:
         - title: "Commands"
-          url: "docs/backend/commands/command"
+          url: "docs/backend/commands"
         - title: "FetchGames"
           url: "docs/backend/commands/fetchgames"
         - title: "Join"
