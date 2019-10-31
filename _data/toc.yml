@@ -1,15 +1,15 @@
-- title: Documentation
-  url: docs
+- title: "Backend"
+  url: "docs/backend"
   links:
-    - title: "Backend"
-      url: "docs/backend"
-      links:
-        - title: "Getting Started"
-          url: "docs/backend/getting-started"
-          children:
-            - title: Features
-              url: "docs/backend/getting-started#getting-started"
-            - title: Building
-              url: "docs/backend/getting-started#building"
-            - title: What kind of API
-              url: "docs/backend/getting-started#what-kind-of-api"
+    - title: "Getting Started"
+      url: "docs/backend/getting-started"
+      children:
+        - title: Features
+          url: "docs/backend/getting-started#getting-started"
+        - title: Building
+          url: "docs/backend/getting-started#building"
+        - title: What kind of API
+          url: "docs/backend/getting-started#what-kind-of-api"
+  
+- title: "Frontend"
+  url: "docs/frontend"
