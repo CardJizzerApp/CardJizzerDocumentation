@@ -3,13 +3,13 @@
   links:
     - title: "Backend"
       url: "docs/backend"
-      children:
+      links:
         - title: "Getting Started"
-          url: "docs/getting-started"
+          url: "docs/backend/getting-started"
           children:
             - title: Features
-              url: "docs/getting-started#getting-started"
-            - title: Development
-              url: "docs/getting-started#development"
-            - title: Customization
-              url: "docs/getting-started#customization"
+              url: "docs/backend/getting-started#getting-started"
+            - title: Building
+              url: "docs/backend/getting-started#building"
+            - title: What kind of API
+              url: "docs/backend/getting-started#what-kind-of-api"
