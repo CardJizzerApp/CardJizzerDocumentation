@@ -1,6 +1,6 @@
 ---
 title: Fetch Games
-permalink: /docs/backend/commands/fetchgames
+permalink: /docs/backend/commands/fetchGames
 ---
 
 # Fetch Games
