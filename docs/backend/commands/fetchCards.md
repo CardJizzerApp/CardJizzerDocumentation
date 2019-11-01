@@ -4,24 +4,44 @@ permalink: /docs/backend/commands/fetchCards
 ---
 
 # Fetch Cards
+Contrary to the [fetchAllPlayedCards command][fetch-all-played-cards] this one is made for the players of the game that are able to lay a card.
 
-This command is an `auth-required` command used for joining an currently active game which is neither in state `INGAME` nor `STOPPED`.
-
-Every lobby will get assigned the state `LOBBY` after creation. Once started by the owner the game will change its state and the users will receive their cards.
-
-Furthermore a new `round` object will be assigned to the game object.
+Thus the prerequisites look like this.
+## Prerequisites
+- Logged in
+- Game in state `INGAME`
+- Sender needs not to be the CardJizzer
 
 ## Sample
 ```json
 {
-    "command": "join",
-    "params": {
-        "gameid": "some-random-uuid-here"
+    "command": "fetchcards"
+}
+```
+
+## Response
+The server will respond with a collection of all cards without text. Only with their UUIDs. This can be useful when the frontend tries to display the players that haven't picked yet.
+```json
+{
+    "errorCode": 0,
+    "message": "OK",
+    "jsonData": {
+        "player-one-uuid": [
+            {
+                "uuid": "some-random-uuid-here"
+            }
+        ],
+        "player-two-uuid": [
+            {
+                "uuid": "some-random-uuid-here"
+            },
+            {
+                "uuid": "some-random-uuid-here"
+            }
+        ]
     }
 }
 ```
 
-Where `gameid` is the id received from the [`fetchGames`][fetchgames] command.
 
-
-[fetchgames]: ./fetchgames.md
+[fetch-all-played-cards]: {{site.baseurl}}/docs/backend/commands/fetchAllPlayedCards
