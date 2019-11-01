@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div align="center">
-    <img src="../res/logo.svg">
+    <img src="{{site.baseurl}}/res/logo.svg">
     <h1>CardJizzers' Documentation</h1>
     <h3>The documentation of CardJizzer.</h3>
 </div>
