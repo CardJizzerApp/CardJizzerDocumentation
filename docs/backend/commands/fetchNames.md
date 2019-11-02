@@ -5,18 +5,28 @@ permalink: /docs/backend/commands/fetchNames
 
 # Fetch Names
 
-This command is an `auth-required` command used for joining an currently active game which is neither in state `INGAME` nor `STOPPED`.
+This command requires authentication. Furthermore the user needs to be in a lobby.
 
-Every lobby will get assigned the state `LOBBY` after creation. Once started by the owner the game will change its state and the users will receive their cards.
+It is designed to fetch the names of the players that are currently with the user itself in the same game.
 
-Furthermore a new `round` object will be assigned to the game object.
+NOTE: This command does not require any params.
 
 ## Sample
 ```json
 {
-    "command": "join",
-    "params": {
-        "gameid": "some-random-uuid-here"
+    "command": "fetchnames"
+}
+```
+
+## Response
+```json
+{
+    "errorCode": 0,
+    "message": "OK",
+    "jsonData": {
+        "some-random-uuid-here-one": "username-one",
+        "some-random-uuid-here-two": "username-two",
+        "some-random-uuid-here-three": "username-three"
     }
 }
 ```
@@ -24,4 +34,4 @@ Furthermore a new `round` object will be assigned to the game object.
 Where `gameid` is the id received from the [`fetchGames`][fetchgames] command.
 
 
-[fetchgames]: ./fetchgames.md
+[GameState]: {{site.baseurl}}/docs/backend/gameState

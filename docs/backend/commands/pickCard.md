@@ -5,23 +5,29 @@ permalink: /docs/backend/commands/pickCard
 
 # Pick Card
 
-This command is an `auth-required` command used for joining an currently active game which is neither in state `INGAME` nor `STOPPED`.
+## Prerequisites
+- Logged in
+- User needs to be in a game with [GameState][game-state] `INGAME`
+- User needs to be the CardJizzer of the round
 
-Every lobby will get assigned the state `LOBBY` after creation. Once started by the owner the game will change its state and the users will receive their cards.
-
-Furthermore a new `round` object will be assigned to the game object.
+`PickCard` is a command only available for the current rounds cardJizzer. It's the way of picking the best card of the round. All other players are permitted using this.
 
 ## Sample
 ```json
 {
-    "command": "join",
+    "command": "pickcard",
     "params": {
-        "gameid": "some-random-uuid-here"
+        "carduuid": "carduuid-here"
     }
 }
 ```
 
-Where `gameid` is the id received from the [`fetchGames`][fetchgames] command.
+## Response
+```json
+{
+    "errorCode": 0,
+    "message": "OK",
+}
+```
 
-
-[fetchgames]: ./fetchgames.md
+[game-state]: {{site.baseurl}}/docs/backend/gameState

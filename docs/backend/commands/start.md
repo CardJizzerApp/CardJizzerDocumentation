@@ -5,23 +5,8 @@ permalink: /docs/backend/commands/start
 
 # Start
 
-This command is an `auth-required` command used for joining an currently active game which is neither in state `INGAME` nor `STOPPED`.
-
-Every lobby will get assigned the state `LOBBY` after creation. Once started by the owner the game will change its state and the users will receive their cards.
-
-Furthermore a new `round` object will be assigned to the game object.
-
-## Sample
-```json
-{
-    "command": "join",
-    "params": {
-        "gameid": "some-random-uuid-here"
-    }
-}
-```
-
-Where `gameid` is the id received from the [`fetchGames`][fetchgames] command.
+This command is a `auth-required` one only available to the lobby-creator. If all players he wants in his game has joined the lobby he can start (update the [GameState][game-state] to `INGAME` and assign a new round to the game. Resulting in a new [event][event] triggered - the [gameStartedEvent][game-started-event])
 
 
-[fetchgames]: ./fetchgames.md
+[event]: {{site.baseurl}}/docs/backend/events/event
+[game-started-event]: {{site.baseurl}}/docs/backend/events/gameStartedEvent

@@ -18,3 +18,21 @@ NOTE: It does not require any arguments.
     "command": "fetchgames",
 }
 ```
+
+## Response
+```json
+{
+    "errorCode": 0,
+    "message": "OK",
+    "jsonData": [
+        {
+            "gameid": "some-random-uuid-here",
+            "players": [
+                {}
+            ],
+            "title": "game-title",
+            "maxplayers": 4
+        }
+    ]
+}
+```

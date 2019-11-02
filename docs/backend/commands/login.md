@@ -5,23 +5,29 @@ permalink: /docs/backend/commands/login
 
 # Login
 
-This command is an `auth-required` command used for joining an currently active game which is neither in state `INGAME` nor `STOPPED`.
+{% include alert.html type="info" title="WIP" content="Work In Progress. Once finished, this alert will disappear." %}
 
-Every lobby will get assigned the state `LOBBY` after creation. Once started by the owner the game will change its state and the users will receive their cards.
+`Login` is a command used for assign the `User`-object with Google-OAuth credentials, stored in the database to the websocket sending this command.
 
-Furthermore a new `round` object will be assigned to the game object.
+The websocket can then work with the google credentials and be identifiable.
 
 ## Sample
 ```json
 {
-    "command": "join",
+    "command": "login",
     "params": {
-        "gameid": "some-random-uuid-here"
+        "token": "Google-Token"
     }
 }
 ```
 
-Where `gameid` is the id received from the [`fetchGames`][fetchgames] command.
+In this case `params.token` is describing the `Google-OAuth-Access-Token`.
 
-
-[fetchgames]: ./fetchgames.md
+## Response
+```json
+{
+    "errorCode": 0,
+    "message": "OK"
+}
+```
+NOTE: This command doesn't provide `jsonData`.
