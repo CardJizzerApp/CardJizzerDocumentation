@@ -1,6 +1,6 @@
 ---
 title: Game Created Event
-permalink: /docs/backend/event/gameCreatedEvent
+permalink: /docs/backend/events/gameStartedEvent
 ---
 
 # Game Created Event
