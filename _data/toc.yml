@@ -1,3 +1,5 @@
+- title: "Architecture"
+  url: "docs/architecture"
 - title: "Backend"
   url: "docs/backend/getting-started"
   links:
@@ -7,7 +9,9 @@
       url: "docs/backend/installation"          
     - title: "Protocol"
       url: "docs/backend/protocol"
-
+    - title: "GameState"
+      url: "docs/backend/gameState"
+      url: "docs/backend/gameState"
     - title: "Commands"
       url: "docs/backend/commands/command"
       children:
