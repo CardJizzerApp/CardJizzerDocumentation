@@ -34,10 +34,11 @@ We decided to bring fresh air in this game and created this hybrid app which all
 this beautiful game anywhere and anytime.
 
 ### What is this repo about?
-This repository is the backend part of the app. It will be deployed to our servers after your push.
+This repository is the documentation of the app.
 
-Please follow [this][frontend] link for the frontend part of this project.
+You can found all important information you need in order to use this app.
 
+Please visit [the docs here](https://cardjizzerapp.github.io/Docs).
 ## Motivation
 Why are we doing this? We want the future of games to be more transparent and modifiable for any developer.
 
