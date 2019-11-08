@@ -5,18 +5,34 @@ permalink: /docs/backend/commands/login
 
 # Login
 
-{% include alert.html type="info" title="WIP" content="Work In Progress. Once finished, this alert will disappear." %}
-
-`Login` is a command used for assign the `User`-object with Google-OAuth credentials, stored in the database to the websocket sending this command.
+`Login` is a command used for assigning the `User`-object with Google-OAuth credentials, stored in the database to the websocket sending this command.
 
 The websocket can then work with the google credentials and be identifiable.
 
 ## Sample
+There are two ways to login:
+
+1. Use a idToken received from Google OAuth login
 ```json
 {
     "command": "login",
     "params": {
-        "token": "Google-Token"
+        "loginData": {
+            "idToken": "id-token-here"
+        }
+    }
+}
+```
+
+2. Or use your username and password like this
+```json
+{
+    "command": "login",
+    "params": {
+        "loginData": {
+            "username": "username-here",
+            "password": "password-here"
+        }
     }
 }
 ```
