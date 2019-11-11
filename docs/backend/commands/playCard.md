@@ -15,7 +15,7 @@ Contrary to the [pickCard][pick-card] command playCard is designed for every oth
 ## Sample
 ```json
 {
-    "command": "playCard",
+    "command": "playcard",
     "params": {
         "carduuid": "carduuid-here"
     }
