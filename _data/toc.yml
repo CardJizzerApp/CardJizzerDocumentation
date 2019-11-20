@@ -1,6 +1,4 @@
 toc:
-  - title: "Architecture"
-    url: "docs/architecture"
   - title: "Backend"
     subfolderitems:
       - page: "Getting Started"
@@ -39,7 +37,7 @@ toc:
           url: "docs/backend/commands/pickCard"
         - page: "logout"
           url: "docs/backend/commands/logout"
-      - title: "Events"
+      - page: "Events"
         url: "docs/backend/events/event"
         children:
         - page: "GameCreatedEvent"
