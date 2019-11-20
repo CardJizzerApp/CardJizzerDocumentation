@@ -2,7 +2,6 @@ toc:
   - title: "Architecture"
     url: "docs/architecture"
   - title: "Backend"
-    url: "docs/backend/getting-started"
     subfolderitems:
       - page: "Getting Started"
         url: "docs/backend/getting-started"
